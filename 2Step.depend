@@ -1,6 +1,8 @@
 # depslib dependency file v1.0
-1469755303 source:c:\users\luis\desktop\2step\main.cpp
+1470108719 source:c:\users\luis\desktop\2step\main.cpp
 	<SFML/Graphics.hpp>
+	"MiPila.h"
+	"Carta.h"
 
 1367997278 c:\sfml-2.1\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -335,4 +337,17 @@
 	<SFML/System/String.hpp>
 	<string>
 	<vector>
+
+1470102409 source:c:\users\luis\desktop\2step\mipila.cpp
+	"MiPila.h"
+
+1470104653 c:\users\luis\desktop\2step\mipila.h
+	<iostream>
+
+1470108664 source:c:\users\luis\desktop\2step\carta.cpp
+	"Carta.h"
+
+1470105399 c:\users\luis\desktop\2step\carta.h
+	"MiPila.h"
+	<iostream>
 
