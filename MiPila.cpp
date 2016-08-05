@@ -1,10 +1,108 @@
 #include "MiPila.h"
 
-MiPila::MiPila(char carta[5], char palo[10], char color[10])
+MiPila::MiPila()
 {
-    this->carta[5] = carta[5];
-    this->palo[10] = palo[10];
-    this->color[10] = color[10];
+    //ctor
+}
+
+bool MiPila::vacio()
+{
+    return inicio==NULL;
+}
+
+void MiPila::push(char* nombre, char* palo, char* color)
+{
+    Nodo* temp = new Nodo(nombre, palo, color);
+
+    if(vacio())
+    {
+        inicio = fin = temp;
+    }
+    else
+    {
+        fin->siguiente = temp;
+        fin = temp;
+    }
+}
+
+int MiPila::size()
+{
+    int tamanio = 0;
+    Nodo* temp = inicio;
+
+    while(temp != NULL)
+    {
+        tamanio++;
+        temp = temp->siguiente;
+    }
+    return tamanio;
+}
+
+void MiPila::printAll()
+{
+    Nodo* temp = inicio;
+
+    while(temp != NULL)
+    {
+        cout<<temp->getNombre()<<" , "<<temp->getPalo()<<" , "<<temp->getColor()<<endl;
+        temp = temp->siguiente;
+    }
+}
+
+void MiPila::print(int index)
+{
+    Nodo* temp = inicio;
+    int contador = 0;
+
+    while(temp != NULL)
+    {
+        if(contador==index)
+        {
+            cout<<temp->getNombre()<<" , "<<temp->getPalo()<<" , "<<temp->getColor()<<endl;
+            return;
+        }
+        contador++;
+        temp = temp->siguiente;
+    }
+}
+
+void MiPila::pop()
+{
+    Nodo* temp = inicio;
+    int contador = 1;
+
+    while(temp->siguiente != NULL)
+    {
+        if(contador == size()-1)
+        {
+            temp->siguiente = temp->siguiente->siguiente;
+            return;
+        }
+        temp = temp->siguiente;
+        contador++;
+    }
+}
+
+MiPila* MiPila::unir(MiPila* pila1, MiPila* pila2)
+{
+    Nodo* temporal = pila1->inicio;
+    MiPila* newPila = new MiPila;
+
+    while(temporal != NULL)
+    {
+        newPila->push(temporal->getNombre(),temporal->getPalo(),temporal->getColor());
+        temporal = temporal->siguiente;
+    }
+
+    temporal = pila2->inicio;
+
+    while(temporal != NULL)
+    {
+        newPila->push(temporal->getNombre(),temporal->getPalo(),temporal->getColor());
+        temporal = temporal->siguiente;
+    }
+
+    return newPila;
 }
 
 MiPila::~MiPila()

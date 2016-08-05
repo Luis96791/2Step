@@ -1,6 +1,6 @@
 #ifndef MIPILA_H
 #define MIPILA_H
-
+#include "Nodo.h"
 #include <iostream>
 
 using namespace std;
@@ -8,15 +8,21 @@ using namespace std;
 class MiPila
 {
     public:
-        MiPila *anterior;
-        char carta[5], palo[10], color[10];
-        MiPila(char carta[5], char palo[10], char color[10]);
+        Nodo* inicio = NULL;
+        Nodo* fin = NULL;
+        MiPila();
+        bool vacio();
+        void push(char* nombre, char* palo, char* color);
+        int size();
+        void printAll();
+        void print(int index);
+        void pop();
+        MiPila* unir(MiPila* pila1, MiPila* pila2);
         virtual ~MiPila();
 
     protected:
 
     private:
-
 };
 
 #endif // MIPILA_H

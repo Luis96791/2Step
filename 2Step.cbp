@@ -43,10 +43,10 @@
 			<Add library="sfml-system" />
 			<Add directory="C:/SFML-2.1/lib" />
 		</Linker>
-		<Unit filename="Carta.cpp" />
-		<Unit filename="Carta.h" />
 		<Unit filename="MiPila.cpp" />
 		<Unit filename="MiPila.h" />
+		<Unit filename="Nodo.cpp" />
+		<Unit filename="Nodo.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
