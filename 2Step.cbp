@@ -43,10 +43,20 @@
 			<Add library="sfml-system" />
 			<Add directory="C:/SFML-2.1/lib" />
 		</Linker>
+		<Unit filename="GenerarMazo.cpp" />
+		<Unit filename="GenerarMazo.h" />
+		<Unit filename="Jugar.cpp" />
+		<Unit filename="Jugar.h" />
 		<Unit filename="MiPila.cpp" />
 		<Unit filename="MiPila.h" />
 		<Unit filename="Nodo.cpp" />
 		<Unit filename="Nodo.h" />
+		<Unit filename="NodoTablero.cpp" />
+		<Unit filename="NodoTablero.h" />
+		<Unit filename="PilaTablero.cpp" />
+		<Unit filename="PilaTablero.h" />
+		<Unit filename="Utility.cpp" />
+		<Unit filename="Utility.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

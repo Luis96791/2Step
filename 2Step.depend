@@ -1,8 +1,11 @@
 # depslib dependency file v1.0
-1470440472 source:c:\users\luis\desktop\2step\main.cpp
+1470609516 source:c:\users\luis\desktop\2step\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"Jugar.h"
+	"MiPila.h"
+	"PilaTablero.h"
+	"Nodo.h"
 
 1367997278 c:\sfml-2.1\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -338,10 +341,10 @@
 	<string>
 	<vector>
 
-1470440578 source:c:\users\luis\desktop\2step\mipila.cpp
+1470608852 source:c:\users\luis\desktop\2step\mipila.cpp
 	"MiPila.h"
 
-1470439999 c:\users\luis\desktop\2step\mipila.h
+1470608519 c:\users\luis\desktop\2step\mipila.h
 	"Nodo.h"
 	<iostream>
 
@@ -358,22 +361,48 @@
 1470440263 c:\users\luis\desktop\2step\nodo.h
 	<iostream>
 
-1470440426 source:c:\users\luis\desktop\2step\jugar.cpp
+1470609792 source:c:\users\luis\desktop\2step\jugar.cpp
 	"Jugar.h"
 
-1470438981 c:\users\luis\desktop\2step\jugar.h
+1470605284 c:\users\luis\desktop\2step\jugar.h
 	<SFML/Graphics.hpp>
 	"Utility.h"
 	"Nodo.h"
 	"MiPila.h"
+	"PilaTablero.h"
+	"GenerarMazo.h"
 	<iostream>
 
-1470441771 c:\users\luis\desktop\2step\utility.h
+1470592652 c:\users\luis\desktop\2step\utility.h
 	"SFML/Graphics.hpp"
 	<iostream>
 	<stdlib.h>
 	<conio.h>
 
-1470436640 source:c:\users\luis\desktop\2step\utility.cpp
+1470592647 source:c:\users\luis\desktop\2step\utility.cpp
 	"Utility.h"
+
+1470592929 source:c:\users\luis\desktop\2step\generarmazo.cpp
+	"GenerarMazo.h"
+
+1470592477 c:\users\luis\desktop\2step\generarmazo.h
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1470603260 source:c:\users\luis\desktop\2step\nodotablero.cpp
+	"NodoTablero.h"
+
+1470603202 c:\users\luis\desktop\2step\nodotablero.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	"MiPila.h"
+
+1470603027 c:\users\luis\desktop\2step\pilatablero.h
+	<iostream>
+	"NodoTablero.h"
+	"MiPila.h"
+
+1470603077 source:c:\users\luis\desktop\2step\pilatablero.cpp
+	"PilaTablero.h"
 

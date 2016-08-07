@@ -83,6 +83,21 @@ void MiPila::pop()
     }
 }
 
+Nodo* MiPila::ultimaPos()
+{
+    Nodo* temp = inicio;
+    int cont = 0;
+    while(temp != NULL)
+    {
+        if(cont == size()-1)
+        {
+            return temp;
+        }
+        temp = temp->siguiente;
+        cont++;
+    }
+}
+
 MiPila* MiPila::unir(MiPila* pila1, MiPila* pila2)
 {
     Nodo* temporal = pila1->inicio;
@@ -103,6 +118,21 @@ MiPila* MiPila::unir(MiPila* pila1, MiPila* pila2)
     }
 
     return newPila;
+}
+
+Nodo* MiPila::buscar(int num)
+{
+    Nodo* temp = inicio;
+
+    while(temp != NULL)
+    {
+        if(num == temp->getId())
+        {
+            return temp;
+        }
+        temp = temp->siguiente;
+    }
+    return NULL;
 }
 
 MiPila::~MiPila()

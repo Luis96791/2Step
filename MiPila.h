@@ -17,7 +17,10 @@ class MiPila
         void printAll();
         void print(int index);
         void pop();
+        Nodo* ultimaPos();
         MiPila* unir(MiPila* pila1, MiPila* pila2);
+        Nodo* buscar(int num);
+
         virtual ~MiPila();
 
     protected:

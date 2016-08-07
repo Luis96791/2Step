@@ -12,7 +12,6 @@ class Utility
     public:
         Utility();
         bool clickSprite(sf::Sprite s, sf::Vector2f mouse);
-        void mezclar();
         virtual ~Utility();
 
     protected:

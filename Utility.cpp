@@ -19,16 +19,6 @@ bool Utility::clickSprite(sf::Sprite s, sf::Vector2f mouse)
     return false;
 }
 
-void Utility::mezclar()
-{
-    int num;
-    for(int s = 1;s <= 52; s++)
-    {
-        num = 1+rand()%(53-1);
-        cout<<num<<endl;
-    }
-}
-
 
 Utility::~Utility()
 {

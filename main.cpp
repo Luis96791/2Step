@@ -1,19 +1,25 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include "Utility.h"
 #include "Jugar.h"
+#include "MiPila.h"
+#include "PilaTablero.h"
+#include "Nodo.h"
 
 using namespace std;
 
 int main()
 {
-    Utility* utility = new Utility;
+    PilaTablero* pila_tablero = new PilaTablero;
+    sf::Texture texture;
+    sf::Sprite sprite;
+
     Jugar* jugar = new Jugar;
 
-    utility->mezclar();
-
-    jugar->llenarPilaPrincipal();
-    jugar->pila_principal->printAll();
+    jugar->pila_mezclada->printAll();
     jugar->ventanaJugar();
+    cout<<"--pila mezclada menos pop's--"<<endl;
+    jugar->pila_mezclada->printAll();
+    cout<<jugar->pila_mezclada->size()<<endl;
+    jugar->mostrarCartas(texture, sprite);
     return 0;
 }
