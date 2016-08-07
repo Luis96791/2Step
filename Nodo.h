@@ -9,7 +9,8 @@ class Nodo
 {
     public:
         Nodo* siguiente;
-        Nodo(char *nombre, char *palo, char *color);
+        Nodo(int id, char *nombre, char *palo, char *color);
+        int getId();
         char* getNombre();
         char* getPalo();
         char* getColor();
@@ -19,6 +20,7 @@ class Nodo
 
     private:
         char *nombre, *palo, *color;
+        int id;
 };
 
 #endif // NODO_H

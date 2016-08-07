@@ -1,7 +1,8 @@
 #include "Nodo.h"
 
-Nodo::Nodo(char *nombre, char *palo, char *color)
+Nodo::Nodo(int id, char *nombre, char *palo, char *color)
 {
+    this->id = id;
     this->nombre = nombre;
     this->palo = palo;
     this->color = color;
@@ -21,6 +22,11 @@ char* Nodo::getPalo()
 char* Nodo::getColor()
 {
     return color;
+}
+
+int Nodo::getId()
+{
+    return id;
 }
 
 Nodo::~Nodo()

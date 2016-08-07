@@ -1,9 +1,8 @@
 # depslib dependency file v1.0
-1470431859 source:c:\users\luis\desktop\2step\main.cpp
+1470440472 source:c:\users\luis\desktop\2step\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
-	"Nodo.h"
-	"MiPila.h"
+	"Jugar.h"
 
 1367997278 c:\sfml-2.1\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -339,10 +338,10 @@
 	<string>
 	<vector>
 
-1470432397 source:c:\users\luis\desktop\2step\mipila.cpp
+1470440578 source:c:\users\luis\desktop\2step\mipila.cpp
 	"MiPila.h"
 
-1470432004 c:\users\luis\desktop\2step\mipila.h
+1470439999 c:\users\luis\desktop\2step\mipila.h
 	"Nodo.h"
 	<iostream>
 
@@ -353,9 +352,28 @@
 	"MiPila.h"
 	<iostream>
 
-1470430286 source:c:\users\luis\desktop\2step\nodo.cpp
+1470440284 source:c:\users\luis\desktop\2step\nodo.cpp
 	"Nodo.h"
 
-1470430317 c:\users\luis\desktop\2step\nodo.h
+1470440263 c:\users\luis\desktop\2step\nodo.h
 	<iostream>
+
+1470440426 source:c:\users\luis\desktop\2step\jugar.cpp
+	"Jugar.h"
+
+1470438981 c:\users\luis\desktop\2step\jugar.h
+	<SFML/Graphics.hpp>
+	"Utility.h"
+	"Nodo.h"
+	"MiPila.h"
+	<iostream>
+
+1470441771 c:\users\luis\desktop\2step\utility.h
+	"SFML/Graphics.hpp"
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+
+1470436640 source:c:\users\luis\desktop\2step\utility.cpp
+	"Utility.h"
 
