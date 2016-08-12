@@ -1791,6 +1791,30 @@
          y="85.26841"
          ry="0" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3456-99-6">
+      <rect
+         style="opacity:1;fill:#cccccc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect3458-2-5"
+         width="30.644947"
+         height="26.478115"
+         x="30.946178"
+         y="85.26841"
+         ry="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3456-9-8-3">
+      <rect
+         style="opacity:1;fill:#cccccc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect3458-4-37-1"
+         width="30.644947"
+         height="26.478115"
+         x="30.946178"
+         y="85.26841"
+         ry="0" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -1805,13 +1829,13 @@
      inkscape:window-height="705"
      id="namedview3338"
      showgrid="false"
-     inkscape:zoom="0.94752309"
-     inkscape:cx="226.17656"
-     inkscape:cy="-59.024739"
+     inkscape:zoom="1.8950462"
+     inkscape:cx="609.8879"
+     inkscape:cy="-74.735389"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg3336" />
+     inkscape:current-layer="g4902-9" />
   <flowRoot
      xml:space="preserve"
      id="flowRoot3805"
@@ -5234,4 +5258,21 @@
            id="rect3817-5" /></flowRegion><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Stencil;-inkscape-font-specification:Stencil;fill:#202326;fill-opacity:1"
          id="flowPara3819-1">A</flowPara></flowRoot>  </g>
+  <g
+     transform="translate(183.79067,19.989515)"
+     id="g4902-9"
+     inkscape:export-filename="C:\Users\Luis\Desktop\2Step\Diamantes\rey.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90">
+    <rect
+       ry="4.9750838"
+       y="212.58115"
+       x="483.70166"
+       height="90"
+       width="77.031387"
+       id="rect3464-3-9-9-05-03-5"
+       style="opacity:1;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
 </svg>

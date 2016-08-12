@@ -13,7 +13,7 @@ class PilaTablero
         NodoTablero* fin = NULL;
         PilaTablero();
         bool vacio();
-        void push(MiPila* pila, sf::Texture texture, sf::Sprite sprite, int pos_x, int pos_y);
+        void push(MiPila* pila);
         void pop();
         int size();
         virtual ~PilaTablero();

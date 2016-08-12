@@ -10,15 +10,9 @@ class NodoTablero
 {
     public:
         NodoTablero* siguiente;
-        NodoTablero(MiPila* pila, sf::Texture texture, sf::Sprite sprite, int pos_x, int pos_y);
+        NodoTablero(MiPila* pila);
         void setPila(MiPila* p);
-        void setSprite(sf::Sprite spt);
-        void setTexture(sf::Texture text);
         MiPila* getPila();
-        sf::Sprite getSprite();
-        sf::Texture getTexture();
-        int posX();
-        int posY();
 
         virtual ~NodoTablero();
 
@@ -26,9 +20,6 @@ class NodoTablero
 
     private:
         MiPila* pila;
-        sf::Texture texture;
-        sf::Sprite sprite;
-        int pos_x, pos_y;
 };
 
 #endif // NODOTABLERO_H

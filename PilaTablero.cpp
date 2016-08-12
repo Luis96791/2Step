@@ -10,9 +10,9 @@ bool PilaTablero::vacio()
     return inicio==NULL;
 }
 
-void PilaTablero::push(MiPila* pila, sf::Texture texture, sf::Sprite sprite, int pos_x, int pos_y)
+void PilaTablero::push(MiPila* pila)
 {
-    NodoTablero* temp = new NodoTablero(pila, texture, sprite, pos_x, pos_y);
+    NodoTablero* temp = new NodoTablero(pila);
 
     if(vacio())
     {

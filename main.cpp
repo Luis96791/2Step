@@ -20,6 +20,6 @@ int main()
     cout<<"--pila mezclada menos pop's--"<<endl;
     jugar->pila_mezclada->printAll();
     cout<<jugar->pila_mezclada->size()<<endl;
-    jugar->mostrarCartas(texture, sprite);
+    jugar->mostrarCartas();
     return 0;
 }

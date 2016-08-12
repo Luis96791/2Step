@@ -29,6 +29,11 @@ int Nodo::getId()
     return id;
 }
 
+void Nodo::setNombre(char* nombre)
+{
+    this->nombre = nombre;
+}
+
 Nodo::~Nodo()
 {
     //dtor

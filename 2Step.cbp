@@ -55,6 +55,8 @@
 		<Unit filename="NodoTablero.h" />
 		<Unit filename="PilaTablero.cpp" />
 		<Unit filename="PilaTablero.h" />
+		<Unit filename="Posiciones.cpp" />
+		<Unit filename="Posiciones.h" />
 		<Unit filename="Utility.cpp" />
 		<Unit filename="Utility.h" />
 		<Unit filename="main.cpp" />

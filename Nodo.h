@@ -14,6 +14,7 @@ class Nodo
         char* getNombre();
         char* getPalo();
         char* getColor();
+        void setNombre(char* nombre);
         virtual ~Nodo();
 
     protected:

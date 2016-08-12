@@ -2,19 +2,21 @@
 
 Jugar::Jugar()
 {
-    //ctor
+    posiciones[20];
 }
 
 void Jugar::ventanaJugar()
 {
     sf::RenderWindow window;
-    sf::Texture text_fondo, text_volteada;
-    sf::Sprite sprite_fondo, back_volteada;
+    sf::Texture text_fondo, text_volteada,t_prueba;
+    sf::Sprite sprite_fondo, back_volteada, s_prueba;
     sf::Texture texture[20];
     sf::Sprite sprite[20];
     sf::Vector2f mouse;
+    Nodo* asignador;
 
-    int clicks = 0;
+    int clicks = 0, ultimaPos = 0;
+    bool click = true;
 
     window.create(sf::VideoMode(900,600),"2Step Cards Game");
     text_fondo.loadFromFile("fondo.png");
@@ -22,6 +24,26 @@ void Jugar::ventanaJugar()
     text_volteada.loadFromFile("mazo_principal/carta1.png");
     back_volteada.setTexture(text_volteada);
     back_volteada.setPosition(286,24);
+
+    sprite[0].setPosition(385,40);
+    sprite[1].setPosition(484,40);
+    sprite[2].setPosition(581,40);
+    sprite[3].setPosition(679,40);
+    sprite[4].setPosition(778,40);
+    sprite[5].setPosition(778,150);
+    sprite[6].setPosition(778,256);
+    sprite[7].setPosition(679,256);
+    sprite[8].setPosition(581,256);
+    sprite[9].setPosition(483,256);
+    sprite[10].setPosition(385,256);
+    sprite[11].setPosition(287,256);
+    sprite[12].setPosition(287,358);
+    sprite[13].setPosition(287,461);
+    sprite[14].setPosition(385,461);
+    sprite[15].setPosition(483,461);
+    sprite[16].setPosition(581,461);
+    sprite[17].setPosition(679,461);
+    sprite[18].setPosition(778,461);
 
     llenarPilaMezclada();
 
@@ -35,7 +57,9 @@ void Jugar::ventanaJugar()
             if(utility->clickSprite(back_volteada,mouse)){
                 clicks++;
                 cout<<clicks<<endl;
+                ultimaPos++;
                 pila_mezclada->pop();
+                click = true;
             }
 
             if(event.type == sf::Event::Closed)
@@ -46,8 +70,160 @@ void Jugar::ventanaJugar()
 
         window.draw(sprite_fondo);
         window.draw(drawMazoPrincipal(clicks, text_volteada, back_volteada));
-        window.draw(mostrarCartas(texture[0],sprite[0]));
+        if(click){
+            if(sprite[0].getTexture()==NULL && ultimaPos==0){
+                asignador = mostrarCartas();
+                texture[0].loadFromFile(asignador->getNombre());
+                sprite[0].setTexture(texture[0]);
+//                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[1].getTexture()==NULL && ultimaPos==1){
+                asignador = mostrarCartas();
+                texture[1].loadFromFile(asignador->getNombre());
+                sprite[1].setTexture(texture[1]);
+//                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[2].getTexture()==NULL && ultimaPos==2){
+                asignador = mostrarCartas();
+                texture[2].loadFromFile(asignador->getNombre());
+                sprite[2].setTexture(texture[2]);
+//                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[3].getTexture()==NULL && ultimaPos==3){
+                asignador = mostrarCartas();
+                texture[3].loadFromFile(asignador->getNombre());
+                sprite[3].setTexture(texture[3]);
+                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[4].getTexture()==NULL && ultimaPos==4){
+                asignador = mostrarCartas();
+                texture[4].loadFromFile(asignador->getNombre());
+                sprite[4].setTexture(texture[4]);
+                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[5].getTexture()==NULL && ultimaPos==5){
+                asignador = mostrarCartas();
+                texture[5].loadFromFile(asignador->getNombre());
+                sprite[5].setTexture(texture[5]);
+                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[6].getTexture()==NULL && ultimaPos==6){
+                asignador = mostrarCartas();
+                texture[6].loadFromFile(asignador->getNombre());
+                sprite[6].setTexture(texture[6]);
+                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[7].getTexture()==NULL && ultimaPos==7){
+                asignador = mostrarCartas();
+                texture[7].loadFromFile(asignador->getNombre());
+                sprite[7].setTexture(texture[7]);
+                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[8].getTexture()==NULL && ultimaPos==8){
+                asignador = mostrarCartas();
+                texture[8].loadFromFile(asignador->getNombre());
+                sprite[8].setTexture(texture[8]);
+                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[9].getTexture()==NULL && ultimaPos==9){
+                asignador = mostrarCartas();
+                texture[9].loadFromFile(asignador->getNombre());
+                sprite[9].setTexture(texture[9]);
+                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[10].getTexture()==NULL && ultimaPos==10){
+                asignador = mostrarCartas();
+                texture[10].loadFromFile(asignador->getNombre());
+                sprite[10].setTexture(texture[10]);
+                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[11].getTexture()==NULL && ultimaPos==11){
+                asignador = mostrarCartas();
+                texture[11].loadFromFile(asignador->getNombre());
+                sprite[11].setTexture(texture[11]);
+                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[12].getTexture()==NULL && ultimaPos==12){
+                asignador = mostrarCartas();
+                texture[12].loadFromFile(asignador->getNombre());
+                sprite[12].setTexture(texture[12]);
+                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[13].getTexture()==NULL && ultimaPos==13){
+                asignador = mostrarCartas();
+                texture[13].loadFromFile(asignador->getNombre());
+                sprite[13].setTexture(texture[13]);
+                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[14].getTexture()==NULL && ultimaPos==14){
+                asignador = mostrarCartas();
+                texture[14].loadFromFile(asignador->getNombre());
+                sprite[14].setTexture(texture[14]);
+                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[15].getTexture()==NULL && ultimaPos==15){
+                asignador = mostrarCartas();
+                texture[15].loadFromFile(asignador->getNombre());
+                sprite[15].setTexture(texture[15]);
+                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[16].getTexture()==NULL && ultimaPos==16){
+                asignador = mostrarCartas();
+                texture[16].loadFromFile(asignador->getNombre());
+                sprite[16].setTexture(texture[16]);
+                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            if(sprite[17].getTexture()==NULL && ultimaPos==17){
+                asignador = mostrarCartas();
+                texture[17].loadFromFile(asignador->getNombre());
+                sprite[17].setTexture(texture[17]);
+                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+                pila_tablero->push(pilaEnTablero);
+            }
+            click = false;
+        }
+
+
+        window.draw(sprite[0]);
+        window.draw(sprite[1]);
+        window.draw(sprite[2]);
+        window.draw(sprite[3]);
+        window.draw(sprite[4]);
+        window.draw(sprite[5]);
+        window.draw(sprite[6]);
+        window.draw(sprite[7]);
+        window.draw(sprite[8]);
+        window.draw(sprite[9]);
+        window.draw(sprite[10]);
+        window.draw(sprite[11]);
+        window.draw(sprite[12]);
+        window.draw(sprite[13]);
+        window.draw(sprite[14]);
+        window.draw(sprite[15]);
+        window.draw(sprite[16]);
+        window.draw(sprite[17]);
+        window.draw(sprite[18]);
         window.display();
+    }
+    for(int c = 0; c <pila_tablero->size(); c++){
+        pilaEnTablero->printAll();
     }
 }
 
@@ -77,6 +253,8 @@ sf::Sprite Jugar::drawMazoPrincipal(int clicks, sf::Texture texture, sf::Sprite 
 
     return sprite;
 }
+
+
 
 MiPila* Jugar::llenarPila()
 {
@@ -154,85 +332,76 @@ MiPila* Jugar::llenarPilaMezclada()
     return pila_mezclada;
 }
 
-/*** EN PROCESO ***/
-PilaTablero* Jugar::llenarPilaTablero(MiPila* pila, sf::Texture texture, sf::Sprite sprite)
-{
-    pila_tablero->push(pila, texture, sprite, 385, 40);
-    pila_tablero->push(pila, texture, sprite, 40, 40);
-    pila_tablero->push(pila, texture, sprite, 60, 60);
-    pila_tablero->push(pila, texture, sprite, 80, 80);
 
-    return pila_tablero;
-}
 
-sf::Sprite Jugar::mostrarCartas(sf::Texture texture, sf::Sprite sprite)
+Nodo* Jugar::mostrarCartas()
 {
     Nodo* nodo = pila_mezclada->ultimaPos();
 
-    if(nodo->getId()==1){texture.loadFromFile("Corazones/As.png");}
-    else if(nodo->getId()==2){texture.loadFromFile("Corazones/2.png");}
-    else if(nodo->getId()==3){texture.loadFromFile("Corazones/3.png");}
-    else if(nodo->getId()==4){texture.loadFromFile("Corazones/4.png");}
-    else if(nodo->getId()==5){texture.loadFromFile("Corazones/5.png");}
-    else if(nodo->getId()==6){texture.loadFromFile("Corazones/6.png");}
-    else if(nodo->getId()==7){texture.loadFromFile("Corazones/7.png");}
-    else if(nodo->getId()==8){texture.loadFromFile("Corazones/8.png");}
-    else if(nodo->getId()==9){texture.loadFromFile("Corazones/9.png");}
-    else if(nodo->getId()==10){texture.loadFromFile("Corazones/10.png");}
-    else if(nodo->getId()==11){texture.loadFromFile("Corazones/joker.png");}
-    else if(nodo->getId()==12){texture.loadFromFile("Corazones/reina.png");}
-    else if(nodo->getId()==13){texture.loadFromFile("Corazones/rey.png");}
+    if(nodo->getId()==1){nodo->setNombre("Corazones/As.png");}
+    else if(nodo->getId()==2){nodo->setNombre("Corazones/2.png");}
+    else if(nodo->getId()==3){nodo->setNombre("Corazones/3.png");}
+    else if(nodo->getId()==4){nodo->setNombre("Corazones/4.png");}
+    else if(nodo->getId()==5){nodo->setNombre("Corazones/5.png");}
+    else if(nodo->getId()==6){nodo->setNombre("Corazones/6.png");}
+    else if(nodo->getId()==7){nodo->setNombre("Corazones/7.png");}
+    else if(nodo->getId()==8){nodo->setNombre("Corazones/8.png");}
+    else if(nodo->getId()==9){nodo->setNombre("Corazones/9.png");}
+    else if(nodo->getId()==10){nodo->setNombre("Corazones/10.png");}
+    else if(nodo->getId()==11){nodo->setNombre("Corazones/joker.png");}
+    else if(nodo->getId()==12){nodo->setNombre("Corazones/reina.png");}
+    else if(nodo->getId()==13){nodo->setNombre("Corazones/rey.png");}
 
-    else if(nodo->getId()==14){texture.loadFromFile("Diamantes/As.png");}
-    else if(nodo->getId()==15){texture.loadFromFile("Diamantes/2.png");}
-    else if(nodo->getId()==16){texture.loadFromFile("Diamantes/3.png");}
-    else if(nodo->getId()==17){texture.loadFromFile("Diamantes/4.png");}
-    else if(nodo->getId()==18){texture.loadFromFile("Diamantes/5.png");}
-    else if(nodo->getId()==19){texture.loadFromFile("Diamantes/6.png");}
-    else if(nodo->getId()==20){texture.loadFromFile("Diamantes/7.png");}
-    else if(nodo->getId()==21){texture.loadFromFile("Diamantes/8.png");}
-    else if(nodo->getId()==22){texture.loadFromFile("Diamantes/9.png");}
-    else if(nodo->getId()==23){texture.loadFromFile("Diamantes/10.png");}
-    else if(nodo->getId()==24){texture.loadFromFile("Diamantes/joker.png");}
-    else if(nodo->getId()==25){texture.loadFromFile("Diamantes/reina.png");}
-    else if(nodo->getId()==26){texture.loadFromFile("Diamantes/rey.png");}
+    else if(nodo->getId()==14){nodo->setNombre("Diamantes/As.png");}
+    else if(nodo->getId()==15){nodo->setNombre("Diamantes/2.png");}
+    else if(nodo->getId()==16){nodo->setNombre("Diamantes/3.png");}
+    else if(nodo->getId()==17){nodo->setNombre("Diamantes/4.png");}
+    else if(nodo->getId()==18){nodo->setNombre("Diamantes/5.png");}
+    else if(nodo->getId()==19){nodo->setNombre("Diamantes/6.png");}
+    else if(nodo->getId()==20){nodo->setNombre("Diamantes/7.png");}
+    else if(nodo->getId()==21){nodo->setNombre("Diamantes/8.png");}
+    else if(nodo->getId()==22){nodo->setNombre("Diamantes/9.png");}
+    else if(nodo->getId()==23){nodo->setNombre("Diamantes/10.png");}
+    else if(nodo->getId()==24){nodo->setNombre("Diamantes/joker.png");}
+    else if(nodo->getId()==25){nodo->setNombre("Diamantes/reina.png");}
+    else if(nodo->getId()==26){nodo->setNombre("Diamantes/rey.png");}
 
-    else if(nodo->getId()==27){texture.loadFromFile("Espadas/As.png");}
-    else if(nodo->getId()==28){texture.loadFromFile("Espadas/2.png");}
-    else if(nodo->getId()==29){texture.loadFromFile("Espadas/3.png");}
-    else if(nodo->getId()==30){texture.loadFromFile("Espadas/4.png");}
-    else if(nodo->getId()==31){texture.loadFromFile("Espadas/5.png");}
-    else if(nodo->getId()==32){texture.loadFromFile("Espadas/6.png");}
-    else if(nodo->getId()==33){texture.loadFromFile("Espadas/7.png");}
-    else if(nodo->getId()==34){texture.loadFromFile("Espadas/8.png");}
-    else if(nodo->getId()==35){texture.loadFromFile("Espadas/9.png");}
-    else if(nodo->getId()==36){texture.loadFromFile("Espadas/10.png");}
-    else if(nodo->getId()==37){texture.loadFromFile("Espadas/joker.png");}
-    else if(nodo->getId()==38){texture.loadFromFile("Espadas/reina.png");}
-    else if(nodo->getId()==39){texture.loadFromFile("Espadas/rey.png");}
+    else if(nodo->getId()==27){nodo->setNombre("Treboles/As.png");}
+    else if(nodo->getId()==28){nodo->setNombre("Treboles/2.png");}
+    else if(nodo->getId()==29){nodo->setNombre("Treboles/3.png");}
+    else if(nodo->getId()==30){nodo->setNombre("Treboles/4.png");}
+    else if(nodo->getId()==31){nodo->setNombre("Treboles/5.png");}
+    else if(nodo->getId()==32){nodo->setNombre("Treboles/6.png");}
+    else if(nodo->getId()==33){nodo->setNombre("Treboles/7.png");}
+    else if(nodo->getId()==34){nodo->setNombre("Treboles/8.png");}
+    else if(nodo->getId()==35){nodo->setNombre("Treboles/9.png");}
+    else if(nodo->getId()==36){nodo->setNombre("Treboles/10.png");}
+    else if(nodo->getId()==37){nodo->setNombre("Treboles/joker.png");}
+    else if(nodo->getId()==38){nodo->setNombre("Treboles/reina.png");}
+    else if(nodo->getId()==39){nodo->setNombre("Treboles/rey.png");}
 
-    else if(nodo->getId()==40){texture.loadFromFile("Treboles/As.png");}
-    else if(nodo->getId()==41){texture.loadFromFile("Treboles/2.png");}
-    else if(nodo->getId()==42){texture.loadFromFile("Treboles/3.png");}
-    else if(nodo->getId()==43){texture.loadFromFile("Treboles/4.png");}
-    else if(nodo->getId()==44){texture.loadFromFile("Treboles/5.png");}
-    else if(nodo->getId()==45){texture.loadFromFile("Treboles/6.png");}
-    else if(nodo->getId()==46){texture.loadFromFile("Treboles/7.png");}
-    else if(nodo->getId()==47){texture.loadFromFile("Treboles/8.png");}
-    else if(nodo->getId()==48){texture.loadFromFile("Treboles/9.png");}
-    else if(nodo->getId()==49){texture.loadFromFile("Treboles/10.png");}
-    else if(nodo->getId()==50){texture.loadFromFile("Treboles/joker.png");}
-    else if(nodo->getId()==51){texture.loadFromFile("Treboles/reina.png");}
-    else if(nodo->getId()==52){texture.loadFromFile("Treboles/rey.png");}
+    else if(nodo->getId()==40){nodo->setNombre("Espadas/As.png");}
+    else if(nodo->getId()==41){nodo->setNombre("Espadas/2.png");}
+    else if(nodo->getId()==42){nodo->setNombre("Espadas/3.png");}
+    else if(nodo->getId()==43){nodo->setNombre("Espadas/4.png");}
+    else if(nodo->getId()==44){nodo->setNombre("Espadas/5.png");}
+    else if(nodo->getId()==45){nodo->setNombre("Espadas/6.png");}
+    else if(nodo->getId()==46){nodo->setNombre("Espadas/7.png");}
+    else if(nodo->getId()==47){nodo->setNombre("Espadas/8.png");}
+    else if(nodo->getId()==48){nodo->setNombre("Espadas/9.png");}
+    else if(nodo->getId()==49){nodo->setNombre("Espadas/10.png");}
+    else if(nodo->getId()==50){nodo->setNombre("Espadas/joker.png");}
+    else if(nodo->getId()==51){nodo->setNombre("Espadas/reina.png");}
+    else if(nodo->getId()==52){nodo->setNombre("Espadas/rey.png");}
 
-    sprite.setTexture(texture);
-    sprite.setPosition(385,40);
+//    sprite.setTexture(texture);
 
-    return sprite;
+    return nodo;
 }
 
 Jugar::~Jugar()
 {
     delete pila_principal;
+    delete pila_mezclada;
     delete utility;
 }
