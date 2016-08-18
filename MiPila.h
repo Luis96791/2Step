@@ -18,6 +18,7 @@ class MiPila
         void print(int index);
         void pop();
         Nodo* ultimaPos();
+        void eliminar(int index);
         MiPila* unir(MiPila* pila1, MiPila* pila2);
         Nodo* buscar(int num);
 

@@ -341,10 +341,10 @@
 	<string>
 	<vector>
 
-1470608852 source:c:\users\luis\desktop\2step\mipila.cpp
+1471232936 source:c:\users\luis\desktop\2step\mipila.cpp
 	"MiPila.h"
 
-1470608519 c:\users\luis\desktop\2step\mipila.h
+1471232772 c:\users\luis\desktop\2step\mipila.h
 	"Nodo.h"
 	<iostream>
 
@@ -361,10 +361,10 @@
 1471042722 c:\users\luis\desktop\2step\nodo.h
 	<iostream>
 
-1471046108 source:c:\users\luis\desktop\2step\jugar.cpp
+1471304286 source:c:\users\luis\desktop\2step\jugar.cpp
 	"Jugar.h"
 
-1471042637 c:\users\luis\desktop\2step\jugar.h
+1471231957 c:\users\luis\desktop\2step\jugar.h
 	<SFML/Graphics.hpp>
 	"Utility.h"
 	"Nodo.h"

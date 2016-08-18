@@ -31,6 +31,7 @@ class Jugar
         MiPila* llenarPilaMezclada();
         Nodo* mostrarCartas();
         sf::Sprite llenarPosiciones(sf::Texture texture, sf::Sprite sprite);
+        bool moverAPenultima();
 
         virtual ~Jugar();
 

@@ -66,6 +66,23 @@ void MiPila::print(int index)
     }
 }
 
+void MiPila::eliminar(int index)
+{
+    Nodo* temp = inicio;
+    int contador = 0;
+
+    while(temp != NULL)
+    {
+        if(contador == index)
+        {
+            temp->siguiente = temp->siguiente->siguiente;
+            return;
+        }
+        temp = temp->siguiente;
+        contador++;
+    }
+}
+
 void MiPila::pop()
 {
     Nodo* temp = inicio;

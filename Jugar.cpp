@@ -11,11 +11,12 @@ void Jugar::ventanaJugar()
     sf::Texture text_fondo, text_volteada,t_prueba;
     sf::Sprite sprite_fondo, back_volteada, s_prueba;
     sf::Texture texture[20];
+    sf::Texture text;
     sf::Sprite sprite[20];
     sf::Vector2f mouse;
     Nodo* asignador;
 
-    int clicks = 0, ultimaPos = 0;
+    int clicks = 0, ultimaPos = 1;
     bool click = true;
 
     window.create(sf::VideoMode(900,600),"2Step Cards Game");
@@ -56,10 +57,29 @@ void Jugar::ventanaJugar()
 
             if(utility->clickSprite(back_volteada,mouse)){
                 clicks++;
-                cout<<clicks<<endl;
                 ultimaPos++;
+                cout<<ultimaPos<<endl;
                 pila_mezclada->pop();
                 click = true;
+            }
+
+            if(utility->clickSprite(sprite[pilaEnTablero->size()-1],mouse))
+            {
+                ultimaPos = ultimaPos-1;
+                sprite[pilaEnTablero->size()].setPosition(sprite[pilaEnTablero->size()-1].getPosition().x , sprite[pilaEnTablero->size()-1].getPosition().y);
+            }
+            if(utility->clickSprite(sprite[pilaEnTablero->size()-2],mouse))
+            {
+                cout<<"Haciendo clic Ultima -1"<<endl;
+            }
+            if(utility->clickSprite(sprite[pilaEnTablero->size()-3],mouse))
+            {
+                cout<<"Haciendo clic Ultima -2"<<endl;
+            }
+
+            if(pilaEnTablero->size()==20)
+            {
+                window.close();
             }
 
             if(event.type == sf::Event::Closed)
@@ -71,124 +91,90 @@ void Jugar::ventanaJugar()
         window.draw(sprite_fondo);
         window.draw(drawMazoPrincipal(clicks, text_volteada, back_volteada));
         if(click){
-            if(sprite[0].getTexture()==NULL && ultimaPos==0){
+            if(/*sprite[ultimaPos].getTexture()==NULL &&*/ ultimaPos==1){
                 asignador = mostrarCartas();
-                texture[0].loadFromFile(asignador->getNombre());
-                sprite[0].setTexture(texture[0]);
-//                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
+                texture[ultimaPos-1].loadFromFile(asignador->getNombre());
+                sprite[ultimaPos-1].setTexture(texture[ultimaPos-1]);
             }
-            if(sprite[1].getTexture()==NULL && ultimaPos==1){
+            if(/*sprite[ultimaPos].getTexture()==NULL &&*/ ultimaPos==2){
                 asignador = mostrarCartas();
-                texture[1].loadFromFile(asignador->getNombre());
-                sprite[1].setTexture(texture[1]);
-//                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
+                texture[ultimaPos-1].loadFromFile(asignador->getNombre());
+                sprite[ultimaPos-1].setTexture(texture[ultimaPos-1]);
             }
-            if(sprite[2].getTexture()==NULL && ultimaPos==2){
+            if(/*sprite[ultimaPos].getTexture()==NULL &&*/ ultimaPos==3){
                 asignador = mostrarCartas();
-                texture[2].loadFromFile(asignador->getNombre());
-                sprite[2].setTexture(texture[2]);
-//                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
+                texture[ultimaPos-1].loadFromFile(asignador->getNombre());
+                sprite[ultimaPos-1].setTexture(texture[ultimaPos-1]);
             }
-            if(sprite[3].getTexture()==NULL && ultimaPos==3){
+            if(/*sprite[ultimaPos].getTexture()==NULL &&*/ ultimaPos==4){
                 asignador = mostrarCartas();
-                texture[3].loadFromFile(asignador->getNombre());
-                sprite[3].setTexture(texture[3]);
-                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
+                texture[ultimaPos-1].loadFromFile(asignador->getNombre());
+                sprite[ultimaPos-1].setTexture(texture[ultimaPos-1]);
             }
-            if(sprite[4].getTexture()==NULL && ultimaPos==4){
+            if(/*sprite[ultimaPos].getTexture()==NULL &&*/ ultimaPos==5){
                 asignador = mostrarCartas();
-                texture[4].loadFromFile(asignador->getNombre());
-                sprite[4].setTexture(texture[4]);
-                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
+                texture[ultimaPos-1].loadFromFile(asignador->getNombre());
+                sprite[ultimaPos-1].setTexture(texture[ultimaPos-1]);
             }
-            if(sprite[5].getTexture()==NULL && ultimaPos==5){
+            if(/*sprite[5].getTexture()==NULL &&*/ ultimaPos==6){
                 asignador = mostrarCartas();
-                texture[5].loadFromFile(asignador->getNombre());
-                sprite[5].setTexture(texture[5]);
-                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
+                texture[ultimaPos-1].loadFromFile(asignador->getNombre());
+                sprite[ultimaPos-1].setTexture(texture[ultimaPos-1]);
             }
             if(sprite[6].getTexture()==NULL && ultimaPos==6){
                 asignador = mostrarCartas();
                 texture[6].loadFromFile(asignador->getNombre());
                 sprite[6].setTexture(texture[6]);
-                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
             }
             if(sprite[7].getTexture()==NULL && ultimaPos==7){
                 asignador = mostrarCartas();
                 texture[7].loadFromFile(asignador->getNombre());
                 sprite[7].setTexture(texture[7]);
-                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
             }
             if(sprite[8].getTexture()==NULL && ultimaPos==8){
                 asignador = mostrarCartas();
                 texture[8].loadFromFile(asignador->getNombre());
                 sprite[8].setTexture(texture[8]);
-                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
             }
             if(sprite[9].getTexture()==NULL && ultimaPos==9){
                 asignador = mostrarCartas();
                 texture[9].loadFromFile(asignador->getNombre());
                 sprite[9].setTexture(texture[9]);
-                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
             }
             if(sprite[10].getTexture()==NULL && ultimaPos==10){
                 asignador = mostrarCartas();
                 texture[10].loadFromFile(asignador->getNombre());
                 sprite[10].setTexture(texture[10]);
-                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
             }
             if(sprite[11].getTexture()==NULL && ultimaPos==11){
                 asignador = mostrarCartas();
                 texture[11].loadFromFile(asignador->getNombre());
                 sprite[11].setTexture(texture[11]);
-                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
             }
             if(sprite[12].getTexture()==NULL && ultimaPos==12){
                 asignador = mostrarCartas();
                 texture[12].loadFromFile(asignador->getNombre());
                 sprite[12].setTexture(texture[12]);
-                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
             }
             if(sprite[13].getTexture()==NULL && ultimaPos==13){
                 asignador = mostrarCartas();
                 texture[13].loadFromFile(asignador->getNombre());
                 sprite[13].setTexture(texture[13]);
-                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
             }
             if(sprite[14].getTexture()==NULL && ultimaPos==14){
                 asignador = mostrarCartas();
                 texture[14].loadFromFile(asignador->getNombre());
                 sprite[14].setTexture(texture[14]);
-                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
             }
             if(sprite[15].getTexture()==NULL && ultimaPos==15){
                 asignador = mostrarCartas();
                 texture[15].loadFromFile(asignador->getNombre());
                 sprite[15].setTexture(texture[15]);
-                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
             }
             if(sprite[16].getTexture()==NULL && ultimaPos==16){
                 asignador = mostrarCartas();
                 texture[16].loadFromFile(asignador->getNombre());
                 sprite[16].setTexture(texture[16]);
-                pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
-                pila_tablero->push(pilaEnTablero);
             }
             if(sprite[17].getTexture()==NULL && ultimaPos==17){
                 asignador = mostrarCartas();
@@ -197,9 +183,10 @@ void Jugar::ventanaJugar()
                 pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
                 pila_tablero->push(pilaEnTablero);
             }
+            pilaEnTablero->push(asignador->getId(),asignador->getNombre(),asignador->getPalo(),asignador->getColor());
+            pila_tablero->push(pilaEnTablero);
             click = false;
         }
-
 
         window.draw(sprite[0]);
         window.draw(sprite[1]);
@@ -222,9 +209,31 @@ void Jugar::ventanaJugar()
         window.draw(sprite[18]);
         window.display();
     }
-    for(int c = 0; c <pila_tablero->size(); c++){
-        pilaEnTablero->printAll();
+}
+
+bool Jugar::moverAPenultima()
+{
+    int temp = pilaEnTablero->size()-2;
+    Nodo* nodo_temp = pilaEnTablero->inicio;
+
+    int viajero = 0;
+    while(true)
+    {
+        if(temp == viajero)
+        {
+            if(nodo_temp->getPalo()==nodo_temp->siguiente->getPalo()){
+                pilaEnTablero->eliminar(viajero);
+                return true;
+            }
+        }
+        nodo_temp = nodo_temp->siguiente;
+        if(nodo_temp->siguiente == NULL)
+        {
+            break;
+        }
+        viajero++;
     }
+    return false;
 }
 
 sf::Sprite Jugar::drawMazoPrincipal(int clicks, sf::Texture texture, sf::Sprite sprite)
