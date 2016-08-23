@@ -1829,13 +1829,13 @@
      inkscape:window-height="705"
      id="namedview3338"
      showgrid="false"
-     inkscape:zoom="1.8950462"
-     inkscape:cx="609.8879"
-     inkscape:cy="-74.735389"
+     inkscape:zoom="0.9475231"
+     inkscape:cx="417.22109"
+     inkscape:cy="-321.03299"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g4902-9" />
+     inkscape:current-layer="svg3336" />
   <flowRoot
      xml:space="preserve"
      id="flowRoot3805"
@@ -5264,15 +5264,130 @@
      inkscape:export-filename="C:\Users\Luis\Desktop\2Step\Diamantes\rey.png"
      inkscape:export-xdpi="90"
      inkscape:export-ydpi="90">
-    <rect
-       ry="4.9750838"
-       y="212.58115"
-       x="483.70166"
-       height="90"
-       width="77.031387"
-       id="rect3464-3-9-9-05-03-5"
-       style="opacity:1;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+    <g
+       id="g5083"
+       transform="matrix(0.65196548,0,0,1.018842,-36.080325,-74.149063)"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-ydpi="90">
+      <g
+         id="g5104"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <rect
+           style="opacity:1;fill:#999999;fill-opacity:0.8125;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4273"
+           width="460.14706"
+           height="196.30128"
+           x="-249.22446"
+           y="490.29321"
+           ry="14.67936" />
+        <flowRoot
+           xml:space="preserve"
+           id="flowRoot5075"
+           style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           transform="matrix(0.80442804,0,0,0.67148014,-118.48153,231.98009)"><flowRegion
+             id="flowRegion5077"><rect
+               id="rect5079"
+               width="510.80551"
+               height="112.92603"
+               x="-132.97829"
+               y="440.62738"
+               style="fill:#ff0000" /></flowRegion><flowPara
+             id="flowPara5081"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;font-family:'MV Boli';-inkscape-font-specification:'MV Boli';fill:#ff0000">¡ HAS PERDIDO !</flowPara></flowRoot>        <g
+           id="g5229"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90">
+          <rect
+             ry="14.67936"
+             y="523.4021"
+             x="454.50183"
+             height="196.30128"
+             width="460.14706"
+             id="rect4273-0"
+             style="opacity:1;fill:#999999;fill-opacity:0.8125;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <flowRoot
+             transform="matrix(0.80442804,0,0,0.67148014,583.8104,264.98134)"
+             style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="flowRoot5075-9"
+             xml:space="preserve"><flowRegion
+               id="flowRegion5077-8"><rect
+                 style="fill:#ff0000"
+                 y="440.62738"
+                 x="-132.97829"
+                 height="112.92603"
+                 width="510.80551"
+                 id="rect5079-8" /></flowRegion><flowPara
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;font-family:'MV Boli';-inkscape-font-specification:'MV Boli';fill:#ff0000"
+               id="flowPara5081-1">¡ HAS GANADO !</flowPara></flowRoot>        </g>
+      </g>
+      <g
+         id="g5125"
+         transform="matrix(0.99739271,0,0,1.0767308,-2.8036185,-51.093293)"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <g
+           id="g5132"
+           transform="translate(-34.894571,100.53389)"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90">
+          <rect
+             style="opacity:1;fill:#00ffff;fill-opacity:0.8125;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect5111"
+             width="246.0533"
+             height="45.578079"
+             x="-144.00426"
+             y="620.29901"
+             ry="14.407927" />
+          <flowRoot
+             xml:space="preserve"
+             id="flowRoot5113"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             transform="matrix(1.5338235,0,0,0.98150646,-211.99266,48.496551)"><flowRegion
+               id="flowRegion5115"><rect
+                 id="rect5117"
+                 width="131.92291"
+                 height="36.938412"
+                 x="67.544525"
+                 y="588.38104"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
+               id="flowPara5121">ACEPTAR</flowPara></flowRoot>        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     id="g5185"
+     transform="matrix(1.0125743,0,0,1,-121.07464,110.81524)"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90">
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="opacity:1;fill:#00b6b6;fill-opacity:0.62946427;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3464-3-9-9-05-03-5"
+       width="77.031387"
+       height="90"
+       x="464.25018"
+       y="224.86807"
+       ry="4.9750838"
+       transform="translate(183.79067,19.989515)" />
+    <ellipse
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       ry="25.604971"
+       rx="27.747829"
+       cy="290.25909"
+       cx="686.97137"
+       id="path4311-3"
+       style="opacity:1;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.86148548;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <ellipse
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       ry="21.964285"
+       rx="24.107141"
+       cy="289.88599"
+       cx="686.97131"
+       id="path4313-3"
+       style="opacity:1;fill:#007f7f;fill-opacity:0.63137255;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
 </svg>

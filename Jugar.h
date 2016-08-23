@@ -32,6 +32,7 @@ class Jugar
         Nodo* mostrarCartas();
         sf::Sprite llenarPosiciones(sf::Texture texture, sf::Sprite sprite);
         bool moverAPenultima();
+        bool moverAntepenultima();
 
         virtual ~Jugar();
 

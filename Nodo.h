@@ -9,9 +9,10 @@ class Nodo
 {
     public:
         Nodo* siguiente;
-        Nodo(int id, char *nombre, char *palo, char *color);
+        Nodo(int id, char *nombre, char *new_nombre, char *palo, char *color);
         int getId();
         char* getNombre();
+        char* getNewNombre();
         char* getPalo();
         char* getColor();
         void setNombre(char* nombre);
@@ -20,7 +21,7 @@ class Nodo
     protected:
 
     private:
-        char *nombre, *palo, *color;
+        char *nombre, *new_nombre, *palo, *color;
         int id;
 };
 

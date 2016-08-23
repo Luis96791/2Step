@@ -12,6 +12,7 @@ class Utility
     public:
         Utility();
         bool clickSprite(sf::Sprite s, sf::Vector2f mouse);
+        string toString(int num);
         virtual ~Utility();
 
     protected:

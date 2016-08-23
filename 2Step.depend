@@ -341,10 +341,10 @@
 	<string>
 	<vector>
 
-1471232936 source:c:\users\luis\desktop\2step\mipila.cpp
+1471928718 source:c:\users\luis\desktop\2step\mipila.cpp
 	"MiPila.h"
 
-1471232772 c:\users\luis\desktop\2step\mipila.h
+1471908899 c:\users\luis\desktop\2step\mipila.h
 	"Nodo.h"
 	<iostream>
 
@@ -355,16 +355,16 @@
 	"MiPila.h"
 	<iostream>
 
-1471042773 source:c:\users\luis\desktop\2step\nodo.cpp
+1471908848 source:c:\users\luis\desktop\2step\nodo.cpp
 	"Nodo.h"
 
-1471042722 c:\users\luis\desktop\2step\nodo.h
+1471908771 c:\users\luis\desktop\2step\nodo.h
 	<iostream>
 
-1471304286 source:c:\users\luis\desktop\2step\jugar.cpp
+1471975242 source:c:\users\luis\desktop\2step\jugar.cpp
 	"Jugar.h"
 
-1471231957 c:\users\luis\desktop\2step\jugar.h
+1471923782 c:\users\luis\desktop\2step\jugar.h
 	<SFML/Graphics.hpp>
 	"Utility.h"
 	"Nodo.h"
@@ -374,13 +374,13 @@
 	"Posiciones.h"
 	<iostream>
 
-1470592652 c:\users\luis\desktop\2step\utility.h
+1471974583 c:\users\luis\desktop\2step\utility.h
 	"SFML/Graphics.hpp"
 	<iostream>
 	<stdlib.h>
 	<conio.h>
 
-1470592647 source:c:\users\luis\desktop\2step\utility.cpp
+1471974631 source:c:\users\luis\desktop\2step\utility.cpp
 	"Utility.h"
 
 1470592929 source:c:\users\luis\desktop\2step\generarmazo.cpp
@@ -404,7 +404,7 @@
 	"NodoTablero.h"
 	"MiPila.h"
 
-1470968812 source:c:\users\luis\desktop\2step\pilatablero.cpp
+1471828057 source:c:\users\luis\desktop\2step\pilatablero.cpp
 	"PilaTablero.h"
 
 1471014791 c:\users\luis\desktop\2step\posiciones.h

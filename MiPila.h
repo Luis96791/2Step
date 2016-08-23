@@ -12,7 +12,7 @@ class MiPila
         Nodo* fin = NULL;
         MiPila();
         bool vacio();
-        void push(int id, char* nombre, char* palo, char* color);
+        void push(int id, char* nombre, char* new_nombre, char* palo, char* color);
         int size();
         void printAll();
         void print(int index);

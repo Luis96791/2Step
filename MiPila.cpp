@@ -10,9 +10,9 @@ bool MiPila::vacio()
     return inicio==NULL;
 }
 
-void MiPila::push(int id, char* nombre, char* palo, char* color)
+void MiPila::push(int id, char* nombre, char* new_nombre, char* palo, char* color)
 {
-    Nodo* temp = new Nodo(id, nombre, palo, color);
+    Nodo* temp = new Nodo(id, nombre, new_nombre, palo, color);
 
     if(vacio())
     {
@@ -56,7 +56,7 @@ void MiPila::print(int index)
 
     while(temp != NULL)
     {
-        if(contador==index)
+        if(contador+1==index)
         {
             cout<<temp->getId()<<" , "<<temp->getNombre()<<" , "<<temp->getPalo()<<" , "<<temp->getColor()<<endl;
             return;
@@ -71,9 +71,9 @@ void MiPila::eliminar(int index)
     Nodo* temp = inicio;
     int contador = 0;
 
-    while(temp != NULL)
+    while(temp->siguiente != NULL)
     {
-        if(contador == index)
+        if(contador+1 == index)
         {
             temp->siguiente = temp->siguiente->siguiente;
             return;
@@ -93,6 +93,7 @@ void MiPila::pop()
         if(contador == size()-1)
         {
             temp->siguiente = temp->siguiente->siguiente;
+            delete(temp->siguiente);
             return;
         }
         temp = temp->siguiente;
@@ -122,7 +123,7 @@ MiPila* MiPila::unir(MiPila* pila1, MiPila* pila2)
 
     while(temporal != NULL)
     {
-        newPila->push(temporal->getId(),temporal->getNombre(),temporal->getPalo(),temporal->getColor());
+        newPila->push(temporal->getId(),temporal->getNombre(), temporal->getNewNombre(), temporal->getPalo(),temporal->getColor());
         temporal = temporal->siguiente;
     }
 
@@ -130,7 +131,7 @@ MiPila* MiPila::unir(MiPila* pila1, MiPila* pila2)
 
     while(temporal != NULL)
     {
-        newPila->push(temporal->getId(),temporal->getNombre(),temporal->getPalo(),temporal->getColor());
+        newPila->push(temporal->getId(),temporal->getNombre(), temporal->getNewNombre(), temporal->getPalo(),temporal->getColor());
         temporal = temporal->siguiente;
     }
 
